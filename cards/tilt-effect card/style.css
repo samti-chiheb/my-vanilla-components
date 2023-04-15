@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+  user-select: none;
+}
+
+/* test */
+/* * {
+  box-shadow: 0 0 0 1px red inset;
+} */
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card{
+  width: 350px;
+  height:  500px;
+  position: relative;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+
+.card img {
+  width:  350px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.card-content{
+  position: absolute;
+  bottom: 100px;
+  padding: 20px 10px;
+  margin: 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  text-align: center;
+  font-size: 0.8rem;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  backdrop-filter: blur(10px);
+  backface-visibility: visible;
+  color: white;
+}
+
+.card-content h2{
+ text-transform: uppercase;
+}
