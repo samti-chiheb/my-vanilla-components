@@ -1,0 +1,143 @@
+body {
+  background-color: #180d38;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 50px auto;
+  border-radius: 50%;
+  border: 1px white solid;
+  cursor: pointer;
+}
+
+.hours-container {
+  position: absolute;
+  width: 70%;
+  height: 70%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.minutes-container {
+  position: absolute;
+  width: 88%;
+  height: 88%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.seconds-container {
+  position: absolute;
+  width: 95%;
+  height: 95%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.indicators {
+  position: relative;
+  width: 95%;
+  height: 95%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: rgba(0, 0, 0, 0.617); */
+  z-index: 9;
+}
+
+.indicators div {
+  position: absolute;
+  background-color: rgba(189, 187, 187, 0.486);
+  /* border: 5px solid red; */
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+
+.indicators :nth-child(1) {
+  left: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.indicators :nth-child(2) {
+  right: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.indicators :nth-child(3) {
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, 0%);
+}
+
+.indicators :nth-child(4) {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+#hours {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+  background: conic-gradient(
+    from 0deg at 50.17% 50.17%,
+    rgb(255, 255, 255) 0deg,
+    #2477f3 2deg,
+    rgba(255, 255, 255, 0) 360deg
+  );
+}
+
+#minutes {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: conic-gradient(
+    from 0deg at 50.17% 50.17%,
+    rgba(255, 255, 255, 0) 0deg,
+    rgba(255, 255, 255, 0) 356deg,
+    rgba(69, 68, 68, 0) 357deg,
+    rgba(255, 255, 255, 0.806) 360deg
+  );
+  box-shadow: rgba(210, 210, 221, 0.223) 0px 4px 14px 0px;
+}
+
+#seconds {
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(
+    from 0deg at 50.17% 50.17%,
+    rgba(255, 255, 255, 0) 0deg,
+    rgba(255, 255, 255, 0) 358deg,
+    rgba(69, 68, 68, 0) 359deg,
+    rgba(237, 237, 237, 0.806) 360deg
+  );
+
+  transition: all 1s linear;
+}
+
+.dot {
+  position: absolute;
+  width: 5%;
+  height: 5%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgb(63, 94, 251) 0%,
+    rgb(255, 255, 255) 100%
+  );
+}
